@@ -69,7 +69,7 @@ This project was completed using **Python 3** and the following Python libraries
 
 4. <code> <b>etl.py</b> </code>: Read and process files from song_data and log_data and load them to tables.
 
-    - <b>Functions and its importance:</b>
+    - <b>Functions in etl.py:</b>
         - <code> <b>process_song_file</b> </code>: Reads the json file, extracts details and inserts into song and artist tables.
         - <code> <b>process_log_file</b> </code>: Reads the json file, extracts details and inserts into DIM tables time and users and also the FACT table songplays.
         - <code> <b>process_data</b> </code>: Finds all the json files in a directory and procees the data using the above two functions. It also shows the status of files processed.
