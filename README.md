@@ -17,16 +17,17 @@ In this project, I apply what I've learned on data modeling with Postgres and bu
 Using the song and log datasets, I need to create a star schema optimized for queries on song play analysis. This includes the following tables.
 
 **Fact Table**
- 1. songplays - records in log data associated with song plays i.e. records with page NextSong
+ 1. <mark>songplays</mark> - records in log data associated with song plays i.e. records with page NextSong
     - songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
+    
 **Dimension Tables**
- 2. users - users in the app
+ 2. <mark>users</mark> - users in the app
     - user_id, first_name, last_name, gender, level
- 3. songs - songs in music database
+ 3. <mark>songs</mark> - songs in music database
     - song_id, title, artist_id, year, duration
- 4. artists - artists in music database
+ 4. <mark>artists</mark> - artists in music database
     - artist_id, name, location, latitude, longitude
- 5. time - timestamps of records in songplays broken down into specific units
+ 5. <mark>time</mark> - timestamps of records in songplays broken down into specific units
     - start_time, hour, day, week, month, year, weekday
 
 This database will help the internal departments of the Sparkify company to do different kinds of analysis to recommend a Sparkify user.
@@ -49,11 +50,11 @@ This database will help the internal departments of the Sparkify company to do d
 
 This project was completed using **Python 3** and the following Python libraries were installed:
 
- - os
- - glob
- - psycopg2
- - pandas
- - import datetime
+ - <mark>os</mark>
+ - <mark>glob</mark>
+ - <mark>psycopg2</mark>
+ - <mark>pandas</mark>
+ - <mark>import datetime</mark>
 
 ---
 
