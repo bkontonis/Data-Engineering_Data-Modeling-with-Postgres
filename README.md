@@ -59,11 +59,34 @@ This project was completed using **Python 3** and the following Python libraries
 
 ---
 
-## Usage
+## Files
 
+1. <code> <b>sql_queries.py</b> </code>: Contains all the SQL queries of the project and this file can be used in multiple files.
 
+2. <code> <b>create_tables.py</b> </code>: Run this file after writing for creating tables for the project.
+
+3. <code> <b>etl.ipynb</b> </code>: This notebook contains detailed instructions on the ETL process for each of the tables. It was created as a support file in order to create the etl.py file.
+
+4. <code> <b>etl.py</b> </code>: Read and process files from song_data and log_data and load them to tables.
+
+    - <b>Functions and its importance:</b>
+        - <code> <b>process_song_file</b> </code>: Reads the json file, extracts details and inserts into song and artist tables.
+        - <code> <b>process_log_file</b> </code>: Reads the json file, extracts details and inserts into DIM tables time and users and also the FACT table songplays.
+        - <code> <b>process_data</b> </code>: Finds all the json files in a directory and procees the data using the above two functions. It also shows the status of files processed.
+        - <code> <b>main</b> </code>: Connects to sparkifydb and instantiate a cursor. Then uses all the above functions in order to process all the data files in 'data/song_data' and 'data/log_data' and insert the data in the database.
+
+5. <code> <b>test.ipynb</b> </code>: Displays the first few rows of each table to let you check your database.
 
 ---
+
+## Execute
+
+1. **create_tables.py**
+    - <code> $python3 create_tables.py </code>
+2. **etl.py**
+    - <code> $python3 etl.py </code>
+3. After running the above scripts from the command line you may open the **est.ipynb** and check if everything went as expected by quering the first lines from each table.
+
 
 ## Authors
 
