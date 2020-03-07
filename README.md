@@ -21,7 +21,8 @@ Using the song and log datasets, I need to create a star schema optimized for qu
     - songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
     
 **Dimension Tables**
- 2. <mark>users</mark> - users in the app
+
+ 2. <code> users </code> - users in the app
     - user_id, first_name, last_name, gender, level
  3. <mark>songs</mark> - songs in music database
     - song_id, title, artist_id, year, duration
