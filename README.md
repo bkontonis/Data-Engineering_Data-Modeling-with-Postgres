@@ -55,7 +55,7 @@ This project was completed using **Python 3** and the following Python libraries
  - <code> <b>glob</b> </code>
  - <code> <b>psycopg2</b> </code>
  - <code> <b>pandas</b> </code>
- - <code> <b>import datetime</b> </code>
+ - <code> <b>datetime</b> </code>
 
 ---
 
