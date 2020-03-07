@@ -85,7 +85,7 @@ This project was completed using **Python 3** and the following Python libraries
     - <code> $python3 create_tables.py </code>
 2. **etl.py**
     - <code> $python3 etl.py </code>
-3. After running the above scripts from the command line you may open the **est.ipynb** and check if everything went as expected by quering the first lines from each table.
+3. After running the above scripts from the command line you may open the **etl.ipynb** and check if everything went as expected by quering the first lines from each table.
 
 
 ## Authors
